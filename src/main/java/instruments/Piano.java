@@ -1,9 +1,9 @@
 package instruments;
 
-import instruments.Instrument;
-
 public class Piano extends Instrument {
-    public Piano(String material, String colour, String type) {
+    private String maker;
+    public Piano(String material, String colour, String type, String maker) {
         super(material, colour, type);
+        this.maker = maker;
     }
 }

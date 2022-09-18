@@ -1,9 +1,11 @@
 package instruments;
 
-import instruments.Instrument;
-
 public class Guitar extends Instrument {
-    public Guitar(String material, String colour, String type) {
+    private int numberOfStrings;
+    private String maker;
+    public Guitar(String material, String colour, String type, int numberOfStrings, String maker) {
         super(material, colour, type);
+        this.numberOfStrings = numberOfStrings;
+        this.maker = maker;
     }
 }
