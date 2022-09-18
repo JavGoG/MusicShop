@@ -1,7 +1,7 @@
 package instruments;
 
 public class Piano extends Instrument {
-    private String maker;
+    private final String maker;
     public Piano(String material, String colour, String type, String maker) {
         super(material, colour, type);
         this.maker = maker;

@@ -1,10 +1,9 @@
 package instruments;
 
-import instruments.Instrument;
-
 public class Violin extends Instrument {
-    private String maker;
-    public Violin(String material, String colour, String type) {
+    private final String maker;
+    public Violin(String material, String colour, String type, String maker) {
         super(material, colour, type);
+        this.maker = maker;
     }
 }
