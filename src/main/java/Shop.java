@@ -1,8 +1,9 @@
+import others.ISell;
 import others.Item;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Shop implements ISell {
 
-public class Shop {
-    List<Item> item = new ArrayList<>();
+    public void sellItem(Item item){
+        item.removeItemToList(item);
+    }
 }
