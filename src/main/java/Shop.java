@@ -14,6 +14,7 @@ public class Shop implements ISell {
         this.stock.remove(item);
     }
     public List<Item> getStock() {
+        System.out.println(stock);
         return stock;
     }
 

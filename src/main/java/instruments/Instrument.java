@@ -23,8 +23,8 @@ public class Instrument extends Item {
         return type;
     }
 
-    public List<Instrument> getInstruments() {
-        return instruments;
+    public String getInstruments() {
+        return instruments.toString();
     }
 
     public Instrument(String material, String colour, String type) {
@@ -32,7 +32,18 @@ public class Instrument extends Item {
         this.colour = colour;
         this.type = type;
     }
-    public void addInstrumentToList (Instrument instrument){
+    public Boolean addInstrumentToList (Instrument instrument){
         this.instruments.add(instrument);
+        Boolean bool = instruments.contains(instrument);
+        return bool;
+    }
+
+    @Override
+    public String toString() {
+        return "Instrument{" +
+                "material='" + material + '\'' +
+                ", colour='" + colour + '\'' +
+                ", type='" + type + '\'' +
+                '}';
     }
 }

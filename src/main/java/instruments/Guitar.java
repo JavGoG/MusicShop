@@ -16,6 +16,15 @@ public class Guitar extends Instrument implements IPlay {
     }
 
     @Override
+    public String toString() {
+        return "Guitar{" +
+                "numberOfStrings=" + numberOfStrings +
+                ", sound='" + sound + '\'' +
+                ", maker='" + maker + '\'' +
+                '}';
+    }
+
+    @Override
     public String play() {
         return this.sound;
     }
